@@ -1,61 +1,73 @@
-# Njabulo Mchunu's Portfolio
+# Njabulo Mchunu Portfolio Website
 
-Welcome to my personal portfolio! This website showcases some of my featured projects, skills, and a little bit about who I am as a developer. I'm passionate about building efficient and meaningful software solutions, and I’m continuously improving my skills through projects, collaborations, and real-world experience.
-
-## 🌐 Live Website
-
-Visit the live site here: [https://inkosana.github.io](https://inkosana.github.io)
-
-> Hosted with ❤️ using **GitHub Pages**
+Welcome to my personal portfolio website!  
+This site showcases my skills, projects, and provides a way to contact me. It is built with plain HTML and CSS, no frameworks or libraries used.
 
 ---
 
-## 📁 Project Structure
+## Overview
 
+This portfolio site includes:
 
----
+- **About Me:** A brief introduction.  
+- **Skills:** A list of technical skills I have mastered.  
+- **Projects:** Descriptions and links to my key projects and their GitHub repositories.  
+- **Contact:** A contact form powered by Formspree to receive messages.  
 
-## 🚀 Featured Projects
-
-### 🔢 Basic Calculator (Python)
-- A beginner-friendly calculator built with Python.
-- [GitHub Repo](https://github.com/iNkosana/basic-calc)
-
-### 🏛️ UKZN Internal Bursary System (Java + MySQL)
-- A student bursary management system developed as part of a university capstone project.
-- Features include user registration, funding allocation, and database triggers.
-
-### 🌍 Portfolio Website (HTML + CSS)
-- This site! Designed from scratch to reflect my journey and showcase my work.
-- Responsive design, contact form integration, and basic animations.
+The site features a clean, responsive design with smooth scrolling and subtle hover animations, and supports dark mode for better accessibility.
 
 ---
 
-## 🛠️ Tools & Technologies
+## How to Edit
 
-- **Languages:** Python, Java, HTML5, CSS3, SQL
-- **Database:** MySQL
-- **Editor:** VS Code / IntelliJ IDEA
-- **Version Control:** Git & GitHub
-- **Hosting:** GitHub Pages
-- **Form Handling:** Formspree.io
+1. **HTML:**  
+   - The main file is `index.html`.  
+   - Update section content within `<section>` tags (About, Skills, Projects, Contact).  
+   - Navigation links correspond to section IDs for smooth scroll.
 
----
+2. **CSS:**  
+   - The styles are in `style.css`.  
+   - Colors, fonts, and animations can be customized here.  
+   - Responsive design and dark mode are included via media queries.
 
-## 📫 Contact
+3. **Projects & Links:**  
+   - Update project descriptions and URLs in the Projects section of `index.html`.
 
-Feel free to connect or collaborate with me!
-
-- **Email:** [Available through the contact form](./contact.html)
-- **GitHub:** [@iNkosana](https://github.com/iNkosana)
-- **LinkedIn:** [Njabulo Mchunu](#) <!-- Replace with your actual LinkedIn URL -->
-
----
-
-## 📌 Acknowledgements
-
-Thanks to open-source learning communities and academic mentors who continue to support and inspire my journey.
+4. **Contact Form:**  
+   - Uses [Formspree](https://formspree.io) for submissions.  
+   - Change the form action URL in the Contact section if you use a different Formspree endpoint.
 
 ---
 
-> “Code is not just instructions for machines—it's how we shape ideas, solve problems, and build the future.” – Njabulo Mchunu
+## Deployment
+
+- The site is hosted on GitHub Pages for free and fast access:  
+  [Live Portfolio](https://inkosana.github.io/portfolio/)  
+
+- To deploy updates:  
+  1. Commit and push changes to the GitHub repository.  
+  2. GitHub Pages automatically updates the live site.
+
+---
+
+## Notes
+
+- Navigation uses inline links with separators for clean UI.  
+- Smooth scrolling is enabled via CSS (`scroll-behavior: smooth`).  
+- CSS contains comments for tricky sections like animations and dark mode support.  
+- The project follows accessibility best practices with semantic HTML and form labels.
+
+---
+
+## License
+
+This project is open source and free to use.
+
+---
+
+Thank you for visiting my portfolio!  
+Feel free to contact me through the form or via [LinkedIn](https://www.linkedin.com/in/njabulo-mchunu).
+
+---
+
+*Last updated: August 2025*

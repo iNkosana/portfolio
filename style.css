@@ -6,6 +6,11 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Enable smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.6;
   background-color: #f8f9fa;
@@ -309,4 +314,76 @@ header nav ul li a.active {
 
 .live-btn:hover {
   background-color: #0077b5;
+}
+/* === Smooth Hover Effects for Interactivity === */
+a, .download-btn, .live-btn, form button {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #005f99;
+}
+
+.project:hover {
+  background-color: #f0faff;
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 170, 255, 0.3);
+}
+
+.download-btn:hover, .live-btn:hover, form button:hover {
+  background-color: #005f99;
+  transform: scale(1.05);
+}
+/* === Creative Project Timeline === */
+.timeline {
+  position: relative;
+  margin: 40px auto;
+  padding-left: 20px;
+  border-left: 3px solid #00aaff;
+  max-width: 800px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background-color: #00aaff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.timeline-item h3 {
+  margin-bottom: 5px;
+  color: #00aaff;
+  font-size: 1.2rem;
+}
+
+.timeline-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Dark mode support for timeline */
+@media (prefers-color-scheme: dark) {
+  .timeline {
+    border-color: #0af;
+  }
+
+  .timeline-item::before {
+    background-color: #0af;
+    border-color: #1e1e1e;
+  }
+
+  .timeline-item p {
+    color: #ccc;
+  }
 }
