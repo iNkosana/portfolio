@@ -251,3 +251,45 @@ footer {
     color: #fff;
   }
 }
+/* Navigation list: inline with | separators */
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul li {
+  display: inline;
+  position: relative;
+  padding: 0 0.5rem;
+}
+
+/* Add vertical bar separator except on last item */
+header nav ul li:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  color: #666;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Style nav links */
+header nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  padding: 0 0.3rem;
+  transition: color 0.3s;
+}
+
+/* Hover and active states - keep existing colors */
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #fff;
+  border-bottom: 2px solid #00aaff;
+}
+
